@@ -3,8 +3,8 @@ import 'package:zego_cloud_tutorial/config/app_secret.dart';
 import 'package:zego_cloud_tutorial/views/home_page.dart';
 import 'package:zego_zimkit/zego_zimkit.dart';
 
-void main() async{
- await ZIMKit().init(
+void main() async {
+  await ZIMKit().init(
     appID: AppSecret.appId,
     appSign: AppSecret.appSign,
   );
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
       home: const HomePage(),
     );
